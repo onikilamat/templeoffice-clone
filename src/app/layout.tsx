@@ -17,17 +17,17 @@ const authenticSans = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Temple Office",
-  description: "Temple Office",
+  title: "MAGNEZYUM",
+  description: "MAGNEZYUM",
   openGraph: {
-    title: "Temple Office",
-    description: "Temple Office",
-    url: "https://templeoffice.co",
+    title: "MAGNEZYUM",
+    description: "MAGNEZYUM",
+    url: "https://mag.nezyum",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Temple Office",
+    title: "MAGNEZYUM",
   },
 };
 

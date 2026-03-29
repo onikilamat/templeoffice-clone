@@ -18,13 +18,15 @@ const BG_IMAGES = [
 ];
 
 const NAV_LINKS = [
-  { label: "Fashion", href: "/fashion" },
-  { label: "Institution", href: "/institution" },
-  { label: "Design", href: "/design" },
-  { label: "Tech", href: "/tech" },
-  { label: "Music", href: "/music" },
-  { label: "Temple Magazine", href: "/temple-magazine" },
-  { label: "Contact", href: "/contact" },
+  { label: "About", href: "/bio" },
+  { label: "Il Seraglio", href: "/ilseraglio" },
+  { label: "Lace Legacy", href: "/lacelegacy" },
+  { label: "Belt Up!", href: "/beltup" },
+  { label: "Star Piece", href: "/starpiece" },
+  {
+    label: "Shop",
+    href: "https://www.shopier.com/ShowProductNew/storefront.php?shop=Magnezyumx&sid=ZUkxV3M0WDMwekRHblJ6TTBfLTFfIF8g",
+  },
 ];
 
 export default function Home() {
@@ -44,19 +46,38 @@ export default function Home() {
       <div className="home-overlay">
         {/* Logo — centered top, inside overlay so it inherits mix-blend-mode stacking context */}
         <div className="home-logo">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/temple-logo.png" alt="Temple" />
+          <span className="home-logo-text">MAGNEZYUM</span>
         </div>
 
         <span className="menu-homepage">
           {NAV_LINKS.map(({ label, href }, i) => (
             <span key={href}>
-              <a href={href}>{label}</a>
+              <a
+                href={href}
+                {...(href.startsWith("http")
+                  ? { target: "_blank", rel: "noopener noreferrer" }
+                  : {})}
+              >
+                {label}
+              </a>
               {i < NAV_LINKS.length - 1 && <br />}
             </span>
           ))}
         </span>
       </div>
+
+      {/* Footer */}
+      <footer className="site-footer">
+        <a
+          href="https://www.instagram.com/mag.nezyum/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="footer-instagram"
+        >
+          Instagram
+        </a>
+        <span className="footer-copy">© 2024 by Magnezyum</span>
+      </footer>
     </main>
   );
 }
