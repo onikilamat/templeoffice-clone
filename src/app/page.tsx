@@ -1,20 +1,11 @@
 const BG_IMAGES = [
-  "/images/bg-01.jpg",
-  "/images/bg-02.jpg",
-  "/images/bg-03.png",
-  "/images/bg-04.jpg",
-  "/images/bg-05.jpg",
-  "/images/bg-06.jpg",
-  "/images/bg-07.jpg",
-  "/images/bg-08.jpg",
-  "/images/bg-09.jpg",
-  "/images/bg-10.jpg",
-  "/images/bg-11.jpg",
-  "/images/bg-12.jpg",
-  "/images/bg-13.jpg",
-  "/images/bg-14.jpg",
-  "/images/bg-15.jpg",
-  "/images/bg-16.jpg",
+  "/images/DSCF3450.JPG",
+  "/images/DSCF3544.JPG",
+  "/images/DSCF4055.JPG",
+  "/images/DSCF4093.JPG",
+  "/images/DSCF4279.JPG",
+  "/images/DSCN5866.JPG",
+  "/images/DSCN6279.JPG",
 ];
 
 const NAV_LINKS = [
@@ -46,7 +37,7 @@ export default function Home() {
       <div className="home-overlay">
         {/* Logo — centered top, inside overlay so it inherits mix-blend-mode stacking context */}
         <div className="home-logo">
-          <span className="home-logo-text">MAGNEZYUM</span>
+          <img src="/images/magnezyum-logo.png" alt="Magnezyum" className="home-logo-img" />
         </div>
 
         <span className="menu-homepage">

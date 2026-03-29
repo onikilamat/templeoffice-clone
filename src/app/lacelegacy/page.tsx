@@ -6,7 +6,7 @@ export default function LaceLegacyPage() {
         <h1 className="collection-title">Lace Legacy</h1>
       </div>
       <div className="collection-content">
-        <p>Lace Legacy koleksiyonu.</p>
+        <p>This collection has been designed using the upcycling technique by combining fabric remnants with minimal cutting. Each piece features lace inherited from our family, making every item unique and one-of-a-kind. Handcrafted by our designer.</p>
       </div>
     </main>
   );
