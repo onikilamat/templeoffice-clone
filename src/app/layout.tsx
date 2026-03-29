@@ -1,20 +1,34 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const citizenGrotesk = localFont({
+  src: "../fonts/CitizenGrotesk-Poster.woff",
+  weight: "900",
+  style: "normal",
+  variable: "--font-citizen-grotesk",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const authenticSans = localFont({
+  src: "../fonts/AUTHENTICSans-90.woff",
+  weight: "400",
+  style: "normal",
+  variable: "--font-authentic-sans",
 });
 
 export const metadata: Metadata = {
-  title: "Website Clone",
-  description: "Pixel-perfect website clone",
+  title: "Temple Office",
+  description: "Temple Office",
+  openGraph: {
+    title: "Temple Office",
+    description: "Temple Office",
+    url: "https://templeoffice.co",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Temple Office",
+  },
 };
 
 export default function RootLayout({
@@ -25,9 +39,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${citizenGrotesk.variable} ${authenticSans.variable}`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
