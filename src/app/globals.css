@@ -38,6 +38,7 @@ a:active {
   inset: 0;
   width: 100vw;
   height: 100vh;
+  height: 100svh; /* iOS Safari: small viewport height (excludes browser chrome) */
   overflow: hidden;
   z-index: 0;
 }
@@ -142,8 +143,28 @@ a:active {
 }
 
 @media (max-width: 768px) {
+  /* Logo — mobilde daha küçük (180px masaüstü için, 70px mobile) */
+  .home-logo img {
+    height: 70px;
+  }
+
+  /* Overlay — logoyu geçecek kadar padding-top */
+  .home-overlay {
+    padding-top: 7rem;
+  }
+
+  /* Menü font boyutu */
   .menu-homepage {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+
+  /* Dokunma hedeflerini büyüt (min 44px) */
+  .home-overlay a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    white-space: normal;
   }
 
   .home-logo-text {
@@ -276,21 +297,40 @@ a:active {
 }
 
 @media (max-width: 768px) {
+  /* Collection sayfaları — daha az padding */
+  .collection-page {
+    padding: 1rem;
+  }
+
+  .collection-title {
+    font-size: 2rem;
+  }
+
+  /* Metin taşmasını engelle */
+  .collection-content {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  /* Fotoğraf + metin alt alta */
   .ilseraglio-layout {
     flex-direction: column;
+    gap: 1.5rem;
   }
 
   .collection-photo {
     width: 100%;
+    height: auto;
   }
 
   .bio-logo {
-    width: 140px;
+    width: 120px;
   }
-}
 
-@media (max-width: 768px) {
-  .collection-title {
-    font-size: 2.5rem;
+  /* Footer mobilde küçük text */
+  .footer-instagram,
+  .footer-copy {
+    font-size: 0.7rem;
   }
 }
