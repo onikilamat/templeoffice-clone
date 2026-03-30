@@ -131,8 +131,6 @@ a:active {
 }
 
 .home-logo img {
-  width: auto;
-  height: 51.84px; /* menü font-size ile aynı */
   display: block;
   filter: invert(1); /* siyah logo → beyaz; difference ile siyah zeminde beyaz görünür */
 }
@@ -149,11 +147,6 @@ a:active {
 }
 
 @media (max-width: 768px) {
-  /* Logo — menü font-size ile aynı */
-  .home-logo img {
-    height: 2rem;
-  }
-
   /* Overlay — logoyu geçecek kadar padding-top */
   .home-overlay {
     padding-top: 7rem;
