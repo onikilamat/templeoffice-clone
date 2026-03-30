@@ -125,7 +125,7 @@ a:active {
 
 .home-logo img {
   width: auto;
-  height: 60px;
+  height: 180px;
   display: block;
   filter: invert(1); /* siyah logo → beyaz; difference ile siyah zeminde beyaz görünür */
 }
