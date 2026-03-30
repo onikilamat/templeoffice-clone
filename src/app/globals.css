@@ -33,6 +33,14 @@ a:active {
   opacity: 0.7;
 }
 
+/* ─── Home Page ─────────────────────────────────────────────────────── */
+
+main {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
 /* ─── Background Slideshow ─────────────────────────────────────────── */
 
 .bg-slideshow {
@@ -122,8 +130,8 @@ a:active {
 /* ─── Logo ─────────────────────────────────────────────────────────── */
 
 .home-logo {
-  position: fixed;
-  top: 1.5rem;
+  position: absolute;
+  top: 32px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10000;
