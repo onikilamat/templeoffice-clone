@@ -2,10 +2,15 @@ export default function IlSeraglioPage() {
   return (
     <main className="collection-page">
       <div className="collection-header">
-        <a href="/" className="back-link">← MAGNEZYUM</a>
+        <a href="/" className="back-link">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/magnezyum-logo.png" alt="Magnezyum" className="back-logo" />
+        </a>
         <h1 className="collection-title">Il Seraglio</h1>
       </div>
-      <div className="collection-content">
+      <div className="collection-content ilseraglio-layout">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/images/DSCF3450.JPG" alt="Il Seraglio" className="collection-photo" />
         <p>Il seraglio collection is an haute couture upcycle project that follows tapestry wall rug struggling to adapt to the world it lives in. Gradually, this inability to fit in drives a transformation, turning it into a haute couture. This collection is fully upcycled and handmade. Each piece has been carefully designed to give new life to materials destined to trash, thus redefining our relationship with waste. By reclaiming and transforming these materials, the collection questions the concept of wastefulness and offers a reflection on substainability. Every creation becomes a unique work of art, carrying a story that combines craftsmanship with environemental consciousness. Magnezyum X Merve Kahveci</p>
       </div>
     </main>

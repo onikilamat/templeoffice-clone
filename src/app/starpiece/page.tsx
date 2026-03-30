@@ -2,7 +2,10 @@ export default function StarPiecePage() {
   return (
     <main className="collection-page">
       <div className="collection-header">
-        <a href="/" className="back-link">← MAGNEZYUM</a>
+        <a href="/" className="back-link">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/magnezyum-logo.png" alt="Magnezyum" className="back-logo" />
+        </a>
         <h1 className="collection-title">Star Piece</h1>
       </div>
       <div className="collection-content">

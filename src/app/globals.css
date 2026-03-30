@@ -123,17 +123,15 @@ a:active {
 
 .home-logo {
   position: fixed;
-  top: -1rem;
+  top: 1.5rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 20;
-  mix-blend-mode: difference;
-  pointer-events: none;
 }
 
 .home-logo img {
   width: auto;
-  height: 140px;
+  height: 60px;
   display: block;
 }
 
@@ -230,11 +228,15 @@ a:active {
 }
 
 .back-link {
-  font-family: var(--font-authentic-sans), sans-serif;
-  font-size: 0.85rem;
-  letter-spacing: 0.05em;
+  display: inline-block;
   opacity: 0.6;
   transition: opacity 0.2s;
+}
+
+.back-logo {
+  height: 48px;
+  width: auto;
+  display: block;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -255,6 +257,41 @@ a:active {
   font-family: var(--font-authentic-sans), sans-serif;
   font-size: 1rem;
   max-width: 640px;
+}
+
+.ilseraglio-layout {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  max-width: 960px;
+}
+
+.collection-photo {
+  width: 380px;
+  flex-shrink: 0;
+  object-fit: cover;
+  display: block;
+}
+
+.bio-logo {
+  width: 200px;
+  flex-shrink: 0;
+  display: block;
+  filter: invert(1);
+}
+
+@media (max-width: 768px) {
+  .ilseraglio-layout {
+    flex-direction: column;
+  }
+
+  .collection-photo {
+    width: 100%;
+  }
+
+  .bio-logo {
+    width: 140px;
+  }
 }
 
 @media (max-width: 768px) {
