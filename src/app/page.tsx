@@ -36,7 +36,7 @@ export default function Home() {
       {/* Logo — fixed center-top, independent of overlay for correct mix-blend-mode */}
       <div className="home-logo">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/images/magnezyum-logo.png" alt="Magnezyum" />
+        <img src="/images/yazili-logo.png" alt="Magnezyum" />
       </div>
 
       {/* Navigation overlay */}
