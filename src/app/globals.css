@@ -20,11 +20,13 @@ body {
   font-family: var(--font-authentic-sans), -apple-system, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden; /* yatay kaydırmayı engelle */
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  touch-action: manipulation; /* mobilde 300ms tap gecikmesini kaldır */
 }
 
 a:active {
@@ -82,7 +84,11 @@ a:active {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
+  max-height: 100vh;
+  max-height: 100svh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   z-index: 9999;
   padding: 1rem;
   mix-blend-mode: difference;
@@ -231,6 +237,7 @@ a:active {
 
 .collection-page {
   min-height: 100vh;
+  min-height: 100svh;
   background: #000;
   color: #fff;
   padding: 2rem;
