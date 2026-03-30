@@ -46,7 +46,8 @@ a:active {
   position: absolute;
   inset: 0;
   opacity: 0;
-  animation: homeSlide 16s linear infinite;
+  /* 7 photos × 2s each = 14s total cycle — no gap, seamless loop */
+  animation: homeSlide 14s linear infinite;
   will-change: opacity;
 }
 
@@ -59,28 +60,20 @@ a:active {
 }
 
 @keyframes homeSlide {
-  0%    { opacity: 1; }
-  6.2%  { opacity: 1; }
-  6.3%  { opacity: 0; }
-  100%  { opacity: 0; }
+  0%      { opacity: 1; }
+  14.28%  { opacity: 1; }
+  14.3%   { opacity: 0; }
+  100%    { opacity: 0; }
 }
 
+/* delay = index × (14s / 7) = index × 2s */
 .bg-item:nth-child(1)  { animation-delay: 0s; }
-.bg-item:nth-child(2)  { animation-delay: 1s; }
-.bg-item:nth-child(3)  { animation-delay: 2s; }
-.bg-item:nth-child(4)  { animation-delay: 3s; }
-.bg-item:nth-child(5)  { animation-delay: 4s; }
-.bg-item:nth-child(6)  { animation-delay: 5s; }
-.bg-item:nth-child(7)  { animation-delay: 6s; }
-.bg-item:nth-child(8)  { animation-delay: 7s; }
-.bg-item:nth-child(9)  { animation-delay: 8s; }
-.bg-item:nth-child(10) { animation-delay: 9s; }
-.bg-item:nth-child(11) { animation-delay: 10s; }
-.bg-item:nth-child(12) { animation-delay: 11s; }
-.bg-item:nth-child(13) { animation-delay: 12s; }
-.bg-item:nth-child(14) { animation-delay: 13s; }
-.bg-item:nth-child(15) { animation-delay: 14s; }
-.bg-item:nth-child(16) { animation-delay: 15s; }
+.bg-item:nth-child(2)  { animation-delay: 2s; }
+.bg-item:nth-child(3)  { animation-delay: 4s; }
+.bg-item:nth-child(4)  { animation-delay: 6s; }
+.bg-item:nth-child(5)  { animation-delay: 8s; }
+.bg-item:nth-child(6)  { animation-delay: 10s; }
+.bg-item:nth-child(7)  { animation-delay: 12s; }
 
 /* ─── Home Overlay ─────────────────────────────────────────────────── */
 
@@ -126,13 +119,15 @@ a:active {
   top: 1.5rem;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 20;
+  z-index: 10000;
+  mix-blend-mode: difference;
 }
 
 .home-logo img {
   width: auto;
   height: 60px;
   display: block;
+  filter: invert(1); /* siyah logo → beyaz; difference ile siyah zeminde beyaz görünür */
 }
 
 /* ─── Menu Typography ──────────────────────────────────────────────── */

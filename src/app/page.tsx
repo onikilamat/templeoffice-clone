@@ -33,13 +33,14 @@ export default function Home() {
         ))}
       </div>
 
+      {/* Logo — fixed center-top, independent of overlay for correct mix-blend-mode */}
+      <div className="home-logo">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/images/magnezyum-logo.png" alt="Magnezyum" />
+      </div>
+
       {/* Navigation overlay */}
       <div className="home-overlay">
-        {/* Logo — centered top, inside overlay so it inherits mix-blend-mode stacking context */}
-        <div className="home-logo">
-          <img src="/images/magnezyum-logo.png" alt="Magnezyum" className="home-logo-img" />
-        </div>
-
         <span className="menu-homepage">
           {NAV_LINKS.map(({ label, href }, i) => (
             <span key={href}>
