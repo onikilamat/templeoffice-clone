@@ -36,7 +36,7 @@ export default function Home() {
       {/* Logo — fixed center-top, independent of overlay for correct mix-blend-mode */}
       <div className="home-logo" style={{ position: "fixed", top: "1rem", left: "50%", transform: "translateX(-50%)" }}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/images/yazili-logo.png" alt="Magnezyum" style={{ width: "300px", height: "auto" }} />
+        <img src="/images/magnezyum logo yeni.png" alt="Magnezyum" style={{ width: "300px", height: "auto", maxWidth: "80vw" }} />
       </div>
 
       {/* Navigation overlay */}
