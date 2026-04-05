@@ -1,11 +1,15 @@
 const BG_IMAGES = [
   "/images/DSCF3450.JPG",
-  "/images/DSCF3544.JPG",
   "/images/DSCF4055.JPG",
-  "/images/DSCF4093.JPG",
   "/images/DSCF4279.JPG",
   "/images/DSCN5866.JPG",
-  "/images/DSCN6279.JPG",
+  '/images/@minasolakk rocked our Magnezyum "Belt Up!" belt on stage at @m6nifestival and yes, she ate🔥Sty.jpg',
+  '/images/@minasolakk rocked our Magnezyum "Belt Up!" belt on stage at @m6nifestival and yes, she ate🔥Sty (1).jpg',
+  "/images/@hilalyelekci of @m6nifestgirls is rocking Magnezyum Belt Up! belt in their brand new video.We'r.jpg",
+  "/images/Ekran Resmi 2026-04-05 12.14.42.png",
+  "/images/Ekran Resmi 2026-04-05 12.15.03.png",
+  "/images/Ekran Resmi 2026-04-05 12.17.49.png",
+  "/images/Ekran Resmi 2026-04-05 12.18.23.png",
 ];
 
 const NAV_LINKS = [
